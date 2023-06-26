@@ -13,19 +13,22 @@ body {
   padding: 3rem 25rem;
 }
 .card {
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   width: 100%;
   max-width: 80vw;
 
   /* center the text  */
   text-align: center;
   /* --------------- delete this later */
-  height: 80vh;
+  /* height: 80vh; */
 
   /* FANCY STYLING */
-  border: 1px solid #0095ff;
+  /* border: 1px solid #0095ff; */
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  background: rgb(238,174,202);
+background: linear-gradient(58deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .search {
   width: 100%;
@@ -34,6 +37,7 @@ body {
   align-items: center;
   /* background-color: orange; */
   /* height: 500px; */
+  padding: 0 5rem;
 }
 .search input {
   width: 80%;
@@ -41,8 +45,16 @@ body {
   height: 35px;
   max-height: 35px;
   outline: none;
-  border: 1px solid #00000043;
+  border: none;
+  /* border: 1px solid #00000043; */
   border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+
+
 
   padding: 1rem 0.5rem;
 }
@@ -51,13 +63,43 @@ body {
   max-width: 20%;
   height: 35px;
   max-height: 20%;
-  background-color: #0095ff;
-  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur( 15px );
+-webkit-backdrop-filter: blur( 15px );
   outline: none;
-  border: none;
+  border: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+/* WEATHER */
+.weather{
+    padding: 4rem;
+    /* background-color: gray; */
+}
+.weather i{
+    /* width: 200px; */
+    /* height: 200px; */
+  
+    font-size: 150px;
+    transform: rotate();
+}
+
+/* INFO */
+.info{
+    /* background-color: orange; */
+}
+.temperature{
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    color: white;
+}
+.city{
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    color: white;
 }
