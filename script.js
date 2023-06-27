@@ -25,6 +25,7 @@ function myAPI() {
       element_cityName.textContent = data.name;
       element_temperature.textContent = Math.round(data.main.temp) + "°F";
       element_description.textContent = data.weather[0].description;
+      showWeatherIcon();
 
       if (data.weather[0].main == "Clouds") {
         element_weatherIcon.src = "images/clouds.png";
@@ -67,3 +68,8 @@ function myAPI() {
       element_description.textContent = "enter a valid city name";
     });
 }
+
+function showWeatherIcon() {
+ element_weatherIcon.style.display = "inline-block";
+}
+
