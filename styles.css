@@ -1,17 +1,28 @@
+/* Color Palette */
+:root{
+  --background-color: #202124;
+  --text-color: #e8eaed;
+  --primary-color: #240046;
+  --secondary-color: #7b2cbf;
+  --accent-color: #e0aaff;
+}
+/* Typography */
+html{
+  /* default = 16px */
+  font-size: 75%;  
+}
 * {
-  padding: 0;
-  margin: 0;
-  /* for Google Fonts */
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-body {
-  background-color: white;
+body{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  /* background-color: gray; */
-  padding: 3rem 25rem;
+  padding: 10vh 10vw 10vh 10vw;
 }
+/* Cards */
 .card {
   padding: 2rem 0rem;
   width: 100%;
@@ -28,18 +39,15 @@ body {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  background: rgb(238, 174, 202);
-  background: linear-gradient(
+  background: var(--secondary-color)
+  /* background: linear-gradient(
     58deg,
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
-  );
+  ); */
 }
-.main-title {
-  margin-bottom: 2rem;
+h1 {
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
-  color: white;
-  text-align: center;
 }
 .search {
   width: 100%;
