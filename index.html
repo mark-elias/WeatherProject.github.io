@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-
     <!-- stylesheets -->
     <link rel="stylesheet" href="styles.css" />
     <!-- <link rel="stylesheet" href="weather.css"> -->
@@ -21,27 +20,25 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <main class="container">
       <h1>Weather API Project</h1>
       <div class="card">
-        <div class="search">
+        <section class="search">
           <input type="text" placeholder="type in a city name" />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="container2">
-          <div class="weather">
-            <img class="weather-icon" src="" />
-          </div>
+          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </section>
+        <section class="weather-section">
+          <img class="weather-icon" src="" />
           <div class="info">
             <p class="temperature"></p>
             <p class="description"></p>
             <p class="city"></p>
           </div>
-        </div>
+        </section>
       </div>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 // getting elements
 let searchInput = document.querySelector(".search input");
-const searchButton = document.querySelector(".search button");
+const searchIcon = document.querySelector("#search-icon");
 
+// elements that get updated
 const element_cityName = document.querySelector(".city");
 const element_temperature = document.querySelector(".temperature");
 const element_description = document.querySelector(".description");
@@ -10,7 +11,7 @@ const element_weatherIcon = document.querySelector(".weather-icon");
 const element_card = document.querySelector(".card");
 
 // when user clicks the search button
-searchButton.addEventListener("click", myAPI);
+searchIcon.addEventListener("click", myAPI);
 
 function myAPI() {
   // set cityName to be used in the api url to the searchInput value
@@ -54,9 +55,7 @@ function myAPI() {
 
       if (isDay) {
         console.log("It is day.");
-        
-        
-    } else {
+      } else {
         console.log("It is night.");
       }
     })
@@ -70,6 +69,5 @@ function myAPI() {
 }
 
 function showWeatherIcon() {
- element_weatherIcon.style.display = "inline-block";
+  element_weatherIcon.style.display = "inline-block";
 }
-
