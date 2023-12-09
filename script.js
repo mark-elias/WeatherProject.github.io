@@ -77,5 +77,5 @@ function myAPI() {
 function showWeatherIcon() {
   element_weatherIcon.style.display = "inline-block";
   // change margin of city text
-  element_weatherSection.style.padding = "0px 0px 2px 0px";
+  element_weatherSection.style.padding = "0px 0px 20px 0px";
 }
