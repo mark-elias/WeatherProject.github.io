@@ -7,18 +7,24 @@ const element_cityName = document.querySelector(".city");
 const element_temperature = document.querySelector(".temperature");
 const element_description = document.querySelector(".description");
 const element_weatherIcon = document.querySelector(".weather-icon");
+const element_weatherSection = document.querySelector(".weather-section");
 
 const element_card = document.querySelector(".card");
 
 // when user clicks the search button
 searchIcon.addEventListener("click", myAPI);
+// when user clicks Enter button
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    myAPI();
+  }
+});
 
 function myAPI() {
   // set cityName to be used in the api url to the searchInput value
   let cityName = searchInput.value;
   const apiKey = "d3a0df086ed3dcae5d358474113fe240"; // Replace with your actual API key
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;
-  //   let cityName = searchInput.value;
 
   fetch(apiUrl) // Replace with the actual API URL
     .then((response) => response.json())
@@ -70,4 +76,6 @@ function myAPI() {
 
 function showWeatherIcon() {
   element_weatherIcon.style.display = "inline-block";
+  // change margin of city text
+  element_weatherSection.style.padding = "0px 0px 2px 0px";
 }
