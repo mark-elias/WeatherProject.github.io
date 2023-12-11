@@ -28,8 +28,8 @@ body {
   /* Your tablet styles go here */
   .container {
     padding: 10vh 10vw 10vh 10vw;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 /* Desktop styles */
@@ -37,17 +37,16 @@ body {
   /* Your desktop styles go here */
   .container {
     padding: 10vh 10vw 10vh 10vw;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
   }
 }
 /* Cards */
 .card {
-  background-color: white;
+  background-color: var(--background-color);
   width: 100%;
   text-align: center;
   border-radius: 10px;
-  box-shadow: rgba(255, 255, 255, 0.281) 0px 5px 15px;
 }
 h1 {
   font-size: 3rem;
@@ -63,6 +62,8 @@ h1 {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.281) 0px 5px 15px;
 }
 .search input {
   width: 100%;

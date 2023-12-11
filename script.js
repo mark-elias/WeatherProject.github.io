@@ -78,4 +78,8 @@ function showWeatherIcon() {
   element_weatherIcon.style.display = "inline-block";
   // change margin of city text
   element_weatherSection.style.padding = "0px 0px 20px 0px";
+  element_weatherSection.style.margin = "50px 0px 0px 0px";
+  element_weatherSection.style.background = "white";
+  element_weatherSection.style.borderRadius = "10px";
+  element_weatherSection.style.boxShadow = "rgba(255, 255, 255, 0.281) 0px 5px 15px";
 }
