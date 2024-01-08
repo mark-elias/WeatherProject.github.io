@@ -24,7 +24,7 @@ body {
   padding: 2vh 10vw 2vh 10vw;
 }
 /* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
   /* Your tablet styles go here */
   .container {
     padding: 10vh 10vw 10vh 10vw;
@@ -33,7 +33,7 @@ body {
   }
 }
 /* Desktop styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1124px) {
   /* Your desktop styles go here */
   .container {
     padding: 10vh 10vw 10vh 10vw;
